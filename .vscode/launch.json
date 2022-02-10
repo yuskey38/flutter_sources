@@ -1,0 +1,48 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "local",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--dart-define=FLAVOR=local"
+            ]
+        },
+        {
+            "name": "localWithPreview",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--dart-define=FLAVOR=local",
+                "--dart-define=PREVIEW=true"
+            ]
+        },
+        {
+            "name": "dev",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--dart-define=FLAVOR=dev"
+            ]
+        },
+        {
+            "name": "devWithPreview",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--dart-define=FLAVOR=dev",
+                "--dart-define=PREVIEW=true"
+            ]
+        },
+        {
+            "name": "dev-release",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--dart-define=FLAVOR=env2",
+                "--release"
+            ]
+        },
+    ]
+}
